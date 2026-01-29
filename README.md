@@ -3,13 +3,13 @@
 ## Introduction
 This project performs an in-depth analysis of COVID-19 epidemiological data to understand trends in confirmed cases, mortality, and vaccination dynamics. The study focuses on both descriptive analysis and predictive modeling, with an emphasis on mortality prediction and vaccination evolution using regression-based machine learning models.
 
-The analysis is based on real-world data retrieved from Google Cloud BigQuery and processed in a distributed environment using PySpark. The main goal is to evaluate how different models perform in predicting COVID-19 mortality and vaccination trends, as well as to interpret these results in an epidemiological context.
+The analysis is based on real-world data retrieved from Google Cloud BigQuery and processed within the **Google Cloud Platform (GCP)** ecosystem, using a distributed environment built with PySpark. The main goal is to evaluate how different models perform in predicting COVID-19 mortality and vaccination trends, as well as to interpret these results in an epidemiological context.
 
 ---
 
 ## Objectives
 The main objectives of this project are:
-- **Data extraction** from Google Cloud BigQuery
+- **Data extraction** from Google Cloud Platform (GCP) using BigQuery
 - **Data cleaning and transformation** to prepare the dataset for analysis
 - **Exploratory Data Analysis (EDA)** to identify trends and patterns
 - **Construction of derived epidemiological indicators**
@@ -21,6 +21,7 @@ The main objectives of this project are:
 
 ## Data Procurement
 The data used in this project was obtained using:
+- **Google Cloud Platform (GCP)**
 - **Google BigQuery Public Datasets** (COVID-19 Open Data)
 - **BigQuery API** for structured querying and data retrieval
 - **JSON authentication file / Google Colab authentication**
@@ -80,7 +81,7 @@ Different feature configurations were tested, especially for vaccination predict
 The main implementation steps are:
 1. **Environment setup**
    - Google Colab configuration
-   - Google Cloud authentication
+   - Google Cloud Platform authentication
 2. **Data extraction and cleaning**
    - Querying BigQuery datasets
    - Data transformation and aggregation
@@ -108,9 +109,10 @@ These metrics were computed on a test dataset to assess model generalization and
 ---
 
 ## Technologies and Frameworks Used
+- **Google Cloud Platform (GCP)**
+- **Google BigQuery**
 - **Google Colab**
 - **PySpark (Spark SQL, MLlib)**
-- **Google BigQuery**
 - **Pandas**
 - **Matplotlib**
 - **Seaborn**
